@@ -215,6 +215,32 @@ impl crate::RegisterSpec for DID_SPEC {
 impl crate::Readable for DID_SPEC {
     type Reader = R;
 }
+#[cfg(feature = "saml11d14a")]
+#[doc = "`reset()` method sets DID to value 0x2083_0005"]
+impl crate::Resettable for DID_SPEC {
+    const RESET_VALUE: Self::Ux = 0x2083_0005;
+}
+#[cfg(feature = "saml11d15a")]
+#[doc = "`reset()` method sets DID to value 0x2083_0004"]
+impl crate::Resettable for DID_SPEC {
+    const RESET_VALUE: Self::Ux = 0x2083_0004;
+}
+#[cfg(feature = "saml11d16a")]
+#[doc = "`reset()` method sets DID to value 0x2083_0003"]
+impl crate::Resettable for DID_SPEC {
+    const RESET_VALUE: Self::Ux = 0x2083_0003;
+}
+#[cfg(feature = "saml11e14a")]
+#[doc = "`reset()` method sets DID to value 0x2083_0002"]
+impl crate::Resettable for DID_SPEC {
+    const RESET_VALUE: Self::Ux = 0x2083_0002;
+}
+#[cfg(feature = "saml11e15a")]
+#[doc = "`reset()` method sets DID to value 0x2083_0001"]
+impl crate::Resettable for DID_SPEC {
+    const RESET_VALUE: Self::Ux = 0x2083_0001;
+}
+#[cfg(feature = "saml11e16a")]
 #[doc = "`reset()` method sets DID to value 0x2083_0000"]
 impl crate::Resettable for DID_SPEC {
     const RESET_VALUE: Self::Ux = 0x2083_0000;
