@@ -1,2 +1,2 @@
 [workspace]
-members = [ "saml11*" ]
+members = [ "saml11" ]
