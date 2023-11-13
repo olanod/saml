@@ -1,0 +1,8 @@
+[package]
+name = "saml-hal"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+embedded-hal-async = "1.0.0-rc.1"
+saml11-pac = { path = "../saml11-pac" }
