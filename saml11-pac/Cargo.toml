@@ -8,9 +8,11 @@ critical-section = { version = "1.0", optional = true }
 cortex-m = "0.7.7"
 cortex-m-rt = { version = "0.7.3", optional = true }
 vcell = "0.1.2"
+embassy-hal-internal = { git = "https://github.com/embassy-rs/embassy", branch = "main", optional = true }
 
 [features]
 rt = ["cortex-m-rt/device"]
+embassy = ["embassy-hal-internal"]
 
 saml11d14a = []
 saml11d15a = []

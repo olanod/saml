@@ -1953,3 +1953,58 @@ impl Peripherals {
         }
     }
 }
+
+#[cfg(feature = "embassy")]
+mod embassy {
+    use super::*;
+    embassy_hal_internal::impl_peripheral!(AC);
+    embassy_hal_internal::impl_peripheral!(ADC);
+    embassy_hal_internal::impl_peripheral!(CCL);
+    embassy_hal_internal::impl_peripheral!(DAC);
+    embassy_hal_internal::impl_peripheral!(DMAC);
+    embassy_hal_internal::impl_peripheral!(DSU);
+    embassy_hal_internal::impl_peripheral!(DSU_EXT);
+    embassy_hal_internal::impl_peripheral!(EIC);
+    embassy_hal_internal::impl_peripheral!(EIC_SEC);
+    embassy_hal_internal::impl_peripheral!(EVSYS);
+    embassy_hal_internal::impl_peripheral!(EVSYS_SEC);
+    embassy_hal_internal::impl_peripheral!(FREQM);
+    embassy_hal_internal::impl_peripheral!(GCLK);
+    embassy_hal_internal::impl_peripheral!(IDAU);
+    embassy_hal_internal::impl_peripheral!(MCLK);
+    embassy_hal_internal::impl_peripheral!(NVMCTRL);
+    embassy_hal_internal::impl_peripheral!(NVMCTRL_SEC);
+    embassy_hal_internal::impl_peripheral!(OPAMP);
+    embassy_hal_internal::impl_peripheral!(OSCCTRL);
+    embassy_hal_internal::impl_peripheral!(OSC32KCTRL);
+    embassy_hal_internal::impl_peripheral!(PAC);
+    embassy_hal_internal::impl_peripheral!(PAC_SEC);
+    embassy_hal_internal::impl_peripheral!(PM);
+    embassy_hal_internal::impl_peripheral!(PORT);
+    embassy_hal_internal::impl_peripheral!(PORT_SEC);
+    embassy_hal_internal::impl_peripheral!(PORT_IOBUS);
+    embassy_hal_internal::impl_peripheral!(PORT_IOBUS_SEC);
+    embassy_hal_internal::impl_peripheral!(RSTC);
+    embassy_hal_internal::impl_peripheral!(RTC);
+    embassy_hal_internal::impl_peripheral!(SERCOM0);
+    embassy_hal_internal::impl_peripheral!(SERCOM1);
+    embassy_hal_internal::impl_peripheral!(SERCOM2);
+    embassy_hal_internal::impl_peripheral!(SUPC);
+    embassy_hal_internal::impl_peripheral!(TC0);
+    embassy_hal_internal::impl_peripheral!(TC1);
+    embassy_hal_internal::impl_peripheral!(TC2);
+    embassy_hal_internal::impl_peripheral!(TRAM);
+    embassy_hal_internal::impl_peripheral!(TRNG);
+    embassy_hal_internal::impl_peripheral!(WDT);
+    embassy_hal_internal::impl_peripheral!(CORE_DEBUG);
+    embassy_hal_internal::impl_peripheral!(CORE_DEBUG_NS);
+    embassy_hal_internal::impl_peripheral!(DIB);
+    embassy_hal_internal::impl_peripheral!(DIB_NS);
+    embassy_hal_internal::impl_peripheral!(ICB);
+    embassy_hal_internal::impl_peripheral!(ICB_NS);
+    embassy_hal_internal::impl_peripheral!(MPU_NS);
+    embassy_hal_internal::impl_peripheral!(NVIC_NS);
+    embassy_hal_internal::impl_peripheral!(SCB_NS);
+    embassy_hal_internal::impl_peripheral!(SYS_TICK);
+    embassy_hal_internal::impl_peripheral!(SYS_TICK_NS);
+}
